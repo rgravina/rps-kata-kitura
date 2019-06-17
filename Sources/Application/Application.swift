@@ -14,12 +14,9 @@ public class App {
     let cloudEnv = CloudEnv()
 
     public init() throws {
-        // Run the metrics initializer
-        initializeMetrics(router: router)
     }
 
     func postInit() throws {
-        // Endpoints
         initializeHealthRoutes(app: self)
     }
 
