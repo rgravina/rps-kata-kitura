@@ -7,5 +7,5 @@ applications:
     - https://github.com/IBM-Swift/swift-buildpack.git
   stack: cflinuxfs2
   command: "'rps-kata-kitura'"
-  memory: 128M
+  memory: 32M
   random-route: true
