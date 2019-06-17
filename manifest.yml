@@ -3,7 +3,9 @@ applications:
 - instances: 1
   timeout: 180
   name: rps-kata-kitura
-  buildpack: swift_buildpack
+  buildpacks:
+    - https://github.com/IBM-Swift/swift-buildpack.git
+  stack: cflinuxfs2
   command: "'rps-kata-kitura'"
   memory: 128M
   random-route: true
